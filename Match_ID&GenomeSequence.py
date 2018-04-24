@@ -33,6 +33,7 @@ for i in range(len(listID)):
             # replace _ to - only for avoid next syntasis problems in future programmes, like the script in R
             longName_lower=longName_lower.replace(r'_', '-')
 
-            #writing the new fasta file             
-            correctFastaFile.write(">" + list_name[i] + "\n" +list_seq[i] + "\n" + dictFasta[key].seq)
+            #writing the new fasta file     
+            type (longName_lower)
+            correctFastaFile.write(">" + longName_lower +"_"+ "GenomicSequence" + "\n" + str (dictFasta[key].seq) )
 correctFastaFile.close()
